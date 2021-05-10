@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ValidateForm extends FormRequest
+class StoreArticleRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,7 +30,5 @@ class ValidateForm extends FormRequest
             'email' => 'required|email|min:9|max:60',
             'comment' => 'min:5|max:500'
         ];
-
-
     }
 }

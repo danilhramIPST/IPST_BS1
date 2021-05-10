@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\ContactControllerEn;
 use App\Http\Controllers\ContactControllerRu;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,9 +21,9 @@ use App\Http\Controllers\ContactControllerRu;
 
 // url: {host}/api/
 //http:{host}/api/contact/{en|ru}
-Route::get('/contact/ru', [ContactControllerRu::class,'index']);
-Route::get('/contact/en', [ContactControllerEn::class,'index']);
+Route::get('/contact/ru', [ContactControllerRu::class, 'index']);
+Route::get('/contact/en', [ContactControllerEn::class, 'index']);
 //http:{host}/api/contact/{en|ru}/send
-Route::post('/contact/ru/send', [ContactControllerRu::class,'send'])->name('send_mail_ru');
-Route::post('/contact/en/send', [ContactControllerEn::class,'send'])->name('send_mail_en');
+Route::post('/contact/ru/send', [ContactControllerRu::class, 'send'])->name('send_mail_ru');
+Route::post('/contact/en/send', [ContactControllerEn::class, 'send'])->name('send_mail_en');
 

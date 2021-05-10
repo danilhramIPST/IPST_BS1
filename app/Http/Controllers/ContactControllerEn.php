@@ -16,7 +16,7 @@ class ContactControllerEn extends Controller
     }
 
 
-    public function send(ValidateForm $request)
+    public function send(StoreArticleRequest $request)
     {
         //dd($request->validated());
 
