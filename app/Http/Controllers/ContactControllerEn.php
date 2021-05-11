@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ValidateForm;
 use App\Mail\TestMailEn;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreArticleRequest;
 use Illuminate\Support\Facades\Mail;
 
 class ContactControllerEn extends Controller

@@ -30,5 +30,7 @@ class StoreArticleRequest extends FormRequest
             'email' => 'required|email|min:9|max:60',
             'comment' => 'min:5|max:500'
         ];
+        $validatedData = $this -> validate($request);
     }
+
 }
