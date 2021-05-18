@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ValidateForm;
 use App\Mail\TestMailEn;
 use App\Http\Requests\StoreArticleRequest;
 use Illuminate\Support\Facades\Mail;
@@ -15,10 +14,9 @@ class ContactControllerEn extends Controller
         return view('contactEn');
     }
 
-
     public function send(StoreArticleRequest $request)
     {
-        //dd($request->validated());
+
 
         if ($request->method() == 'POST') {
             $textMail = "<p><b>Имя и фамилия:</b>{$request->input('name')}</p><br>";

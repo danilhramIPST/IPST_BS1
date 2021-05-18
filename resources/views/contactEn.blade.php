@@ -4,6 +4,7 @@
 
 @section('content')
     <h1>Contacts</h1>
+
     <form action={{route('send_mail_en')}} method="post" enctype="multipart/form-data">
         @csrf
 
@@ -41,4 +42,3 @@
 
     </form>
 @endsection
-

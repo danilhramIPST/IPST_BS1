@@ -24,7 +24,6 @@ class TestMailEn extends Mailable
         $this->textMail = $textMail;
         $this->file = $file;
     }
-//dd
 
     /**
      * Build the message.
